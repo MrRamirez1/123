@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteShoes - Премиальная обувь</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-image: url('312312.png'); /* Ваше основное фоновое изображение */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+        
+        header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #ccc;
+        }
+        
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            max-width: 800px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        
+        .products {
+            padding: 80px 50px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 60px;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-image {
+            height: 250px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        
+        .product-info p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+        
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 30px 50px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        .copyright {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">EliteShoes</div>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Эксклюзивная обувь для вас</h1>
+        <p>Откройте для себя мир премиального комфорта и стиля. Коллекция сезона уже в продаже.</p>
+        <a href="#" class="btn">В каталог</a>
+    </section>
+    
+    <section class="products">
+        <h2 class="section-title">Популярные модели</h2>
+        <div class="product-grid">
+            <!-- Первая карточка - теперь с 312312.png -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('312312.png');"></div>
+                <div class="product-info">
+                    <h3>Кожаные оксфорды</h3>
+                    <p>Классические оксфорды из натуральной кожи ручной работы. Идеальный выбор для делового стиля.</p>
+                    <div class="price">12 990 ₽</div>
+                </div>
+            </div>
+            
+            <!-- Вторая карточка - теперь с Unti333123123tled.png -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('Unti333123123tled.png');"></div>
+                <div class="product-info">
+                    <h3>Спортивные кроссовки</h3>
+                    <p>Удобные и стильные кроссовки для активного образа жизни с амортизирующей подошвой.</p>
+                    <div class="price">8 490 ₽</div>
+                </div>
+            </div>
+            
+            <!-- Третья карточка - оставлена Unti333123123tled.png (можно заменить при необходимости) -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('Unti333123123tled.png');"></div>
+                <div class="product-info">
+                    <h3>Зимние ботинки</h3>
+                    <p>Теплые и водонепроницаемые ботинки для холодного сезона с меховой подкладкой.</p>
+                    <div class="price">15 990 ₽</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="#">О компании</a>
+            <a href="#">Доставка и оплата</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Контакты</a>
+        </div>
+        <div class="copyright">
+            © 2023 EliteShoes. Все права защищены.
+        </div>
+    </footer>
+</body>
+</html>
